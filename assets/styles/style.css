@@ -54,6 +54,11 @@ body{
     overflow: hidden;
 }
 
+@media (max-width:768px) {
+    .sliderText{top: 70%;}
+}
+
+
 .swiper-scrollbar-drag {
     background-color: whitesmoke !important;
 }
