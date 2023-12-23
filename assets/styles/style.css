@@ -1,0 +1,120 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(152, 152, 152) ;
+}
+ /* navbar */
+
+.navbar {
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links ul {
+    direction: ltr;
+}
+
+/* slider */
+.slider img {
+    height: 550px !important;
+}
+
+.sliderText {
+    width: 80%;
+    position: absolute;
+    z-index: 90;
+    color: white    ;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 1.8;
+    text-align: center;
+    left: 10%;
+    top: 85vh;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 15px black;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.swiper-scrollbar-drag {
+    background-color: whitesmoke !important;
+}
+
+/* whoWeAre */
+
+.whoWeAre {
+    background-color:rgb(152, 152, 152);
+    color: black;
+}
+
+.whoWeAreText {
+    direction: rtl;
+    line-height: 1.8;
+    font-size: 22px;
+    text-align: right;
+}
+
+.storeCard img {
+    height: 250px;
+}
+
+.storeCard {
+    width: calc((100% / 4) - 30px) ;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.storeCard:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:768px) {
+    .storeCard {
+        width: calc((100% / 2) - 20px);
+    }
+}
+@media (max-width:500px) {
+    .storeCard {
+        width: 100%;
+    }
+}
+
+
+.whatsIcon {
+    font-size: 60px;
+    position: sticky;
+    bottom: 0;
+    text-align: right;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+.whatsIcon i {
+    color: green !important;
+}
+
+.contact div {
+    text-align: right;
+}
+
+.icons {
+    text-align: center;
+}
