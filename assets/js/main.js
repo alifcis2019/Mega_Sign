@@ -8,6 +8,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+
   /**
    * Preloader
    */
@@ -89,6 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
       top: 0,
       behavior: 'smooth'
     }));
+  }
+
+
+
+  const whattsapp = document.querySelector('.whattsapp');
+  if (whattsapp) {
+    const togglewhattsapp = function() {
+      window.scrollY > 100 ? whattsapp.classList.add('active') : whattsapp.classList.remove('active');
+    }
+    window.addEventListener('load', togglewhattsapp);
+    document.addEventListener('scroll', togglewhattsapp);
   }
 
   /**

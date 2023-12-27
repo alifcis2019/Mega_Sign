@@ -1880,6 +1880,11 @@ section {
   .hero .info h2 {
     display: none;
   }
+
+  .hero .carousel-item {
+  background-size: 100% 100%;
+  object-fit: scale-down;
+  }
 }
 
 .hero .info h2 {
@@ -2670,3 +2675,34 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+
+.whattsapp {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  left: 30px !important;
+  bottom: 40px;
+  z-index: 999999;
+  /* color: var(--color-primary); */
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+
+.whattsapp i {
+  font-size: 50px;
+  color: var(--color-primary);
+  line-height: 0;
+  transition: .5s;
+}
+
+.whattsapp i:hover {
+  font-size: 60px;
+}
+
+.whattsapp.active {
+  visibility: visible;
+  opacity: .8;
+} 
