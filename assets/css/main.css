@@ -1858,7 +1858,9 @@ section {
   overflow: hidden;
   z-index: 1;
   transition-duration: 0.5s;
+  filter: brightness(2);
 }
+
 
 .hero .carousel-item::before {
   content: "";
@@ -1951,6 +1953,7 @@ section {
 .hero .carousel-control-next {
   justify-content: end;
 }
+
 
 @media (min-width: 640px) {
   .hero .carousel-control-next {
@@ -2706,3 +2709,10 @@ section {
   visibility: visible;
   opacity: .8;
 } 
+
+.portfolio-flters li {
+  padding: 10px !important;
+  background-color: #FEB900;
+  color: white !important;
+  border-radius: 10px;
+}
