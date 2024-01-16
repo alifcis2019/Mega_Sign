@@ -223,3 +223,33 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector("#hero-carousel").innerHTML = `
+    <div class="carousel-item active pc" style="background-image: url(assets/img/hero-carousel/14.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/15.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/16.jpg)"></div>
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    `
+  } else {
+    
+  }
+}
+
+// Create a MediaQueryList object
+var x = window.matchMedia("(max-width: 991px)")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});

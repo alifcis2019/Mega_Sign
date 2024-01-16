@@ -11,6 +11,10 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+#main {
+  background-color: white;
+}
+
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
@@ -36,6 +40,7 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   overflow-x: hidden;
+  background-color: white;
 }
 
 a {
@@ -245,6 +250,10 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.image__logo {
+  box-shadow: 100px 200px white;
+}
+
 .header {
   z-index: 997;
   position: absolute;
@@ -670,6 +679,7 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Constructions Section
 --------------------------------------------------------------*/
@@ -866,6 +876,10 @@ section {
 /*--------------------------------------------------------------
 # Our Projects Section
 --------------------------------------------------------------*/
+.projects {
+  background-color: white;
+}
+
 .projects .portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1853,12 +1867,14 @@ section {
   object-fit: cover;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
   z-index: 1;
   transition-duration: 0.5s;
-  filter: brightness(2);
+  filter: brightness(3);
+  height: 100%;
 }
 
 
@@ -1875,17 +1891,13 @@ section {
   z-index: 2;
 }
 
+
 @media (max-width: 768px) {
   .hero .info {
     padding: 0 50px;
   }
   .hero .info h2 {
     display: none;
-  }
-
-  .hero .carousel-item {
-  background-size: 100% 100%;
-  object-fit: scale-down;
   }
 }
 
